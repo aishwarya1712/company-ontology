@@ -1,0 +1,1021 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology/"
+     xml:base="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:CompanyOntology="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#hasAsset -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#hasAsset">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Asset"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#hasDepartments -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#hasDepartments">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#isDepartmentIn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Department"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#hasEmployee -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#hasEmployee">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#isEmployeeAt"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Employee"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#hasInvestor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#hasInvestor">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#investsIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#investsIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#investsIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Investor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Company"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#isDepartmentIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#isDepartmentIn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#isEmployeeAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#isEmployeeAt"/>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#isPartOfDepartment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#isPartOfDepartment">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Employee"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Department"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#isProductOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#isProductOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#produces"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#isSubsidiaryOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#isSubsidiaryOf">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#owns"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#manages -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#manages">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Manager"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Department"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#operatesIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#operatesIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Industry"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#owns -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#owns">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Subsidiary"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#produces -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#produces">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Product"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#companyId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#companyId">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#companyName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#companyName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#dateFounded -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#dateFounded">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#departmentId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#departmentId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Department"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#departmentName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#departmentName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Department"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#employeeId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#employeeId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Employee"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#employeeName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#employeeName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Employee"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#industryId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#industryId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Industry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#industryName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#industryName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Industry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#investorId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#investorId">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Investor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#investorName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#investorName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Investor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#naics -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#naics">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Industry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#naicsCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#naicsCode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Industry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#productId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#productId">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#productName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#productName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Product"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Department"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Accessory_Equipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Accessory_Equipment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Accounting_And_Finance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Accounting_And_Finance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Angel_Investor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Angel_Investor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Investor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Application_Development -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Application_Development">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Information_Technology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Asset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Asset"/>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Bank -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Bank">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Investor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Benefit_Corporation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Benefit_Corporation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Building -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Building">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Business_Intelligence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Business_Intelligence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Information_Technology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Businesss_Strategy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Businesss_Strategy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#C_Corporation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#C_Corporation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Capital_Good -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Capital_Good">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Cash -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Cash">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Comp_And_Benefits -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Comp_And_Benefits">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Human_Resources"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Company -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Company"/>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Compliance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Compliance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Human_Resources"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Component -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Component">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Consultant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Consultant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Contract_Employee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Contract_Employee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Convenience_Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Convenience_Product">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Customer_Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Customer_Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Department"/>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Employee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Employee"/>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Engineering_And_Technology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Engineering_And_Technology">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Full_Time_Employee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Full_Time_Employee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#General_Partnership -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#General_Partnership">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Human_Resources -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Human_Resources">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#IT_Administration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#IT_Administration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Information_Technology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#IT_Procurement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#IT_Procurement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Information_Technology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#IT_Security -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#IT_Security">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Information_Technology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Industry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Industry"/>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Information_Technology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Information_Technology">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Institutional_Investor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Institutional_Investor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Investor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Intangible -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Intangible">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Intern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Intern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Inventory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Inventory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Investor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Investor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Joint_Venture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Joint_Venture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Land -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Land">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Legal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Legal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Limited_Liability_Company -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Limited_Liability_Company">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Limited_Liability_Partnership -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Limited_Liability_Partnership">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Limited_Partnership -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Limited_Partnership">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Major_Equipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Major_Equipment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Manager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Manager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Employee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Marketing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Marketing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Network_Administration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Network_Administration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Information_Technology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Non_Profit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Non_Profit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Operating_Supplies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Operating_Supplies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Operations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Operations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#P2P_Lending -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#P2P_Lending">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Investor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Patent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Patent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Personal_Investor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Personal_Investor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Investor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Procurement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Procurement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Product"/>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Raw_Material -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Raw_Material">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#S_Corporation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#S_Corporation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Sales -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Sales">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Shopping_Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Shopping_Product">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Sole_Proprietorship -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Sole_Proprietorship">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Specialty_Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Specialty_Product">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Stock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Stock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Subsidiary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Subsidiary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Company"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Talent_Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Talent_Management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Human_Resources"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Training_And_Development -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Training_And_Development">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Human_Resources"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Unsought_Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Unsought_Product">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Product"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Venture_Capitalist -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Venture_Capitalist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Investor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Workplace_Safety -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Workplace_Safety">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Human_Resources"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#R&amp;D -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#R&amp;D">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Department"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#All_Other_Information_Services -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#All_Other_Information_Services">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Industry"/>
+        <CompanyOntology:naics>All Other Information Services</CompanyOntology:naics>
+        <CompanyOntology:naicsCode>519190</CompanyOntology:naicsCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Alphabet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Alphabet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Company"/>
+        <CompanyOntology:operatesIn rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Computer_Programming_Services"/>
+        <CompanyOntology:owns rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Google"/>
+        <CompanyOntology:companyId>101</CompanyOntology:companyId>
+        <CompanyOntology:companyName>Alphabet</CompanyOntology:companyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Amazon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Amazon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Company"/>
+        <CompanyOntology:operatesIn rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Electronic_Shopping_and_Mail-Order_Houses"/>
+        <CompanyOntology:owns rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Whole_Foods"/>
+        <CompanyOntology:companyId>102</CompanyOntology:companyId>
+        <CompanyOntology:companyName>Amazon.com Inc</CompanyOntology:companyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#BlackRock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#BlackRock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Investor"/>
+        <CompanyOntology:investsIn rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Alphabet"/>
+        <CompanyOntology:investsIn rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Amazon"/>
+        <CompanyOntology:investsIn rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Google"/>
+        <CompanyOntology:investorId>103</CompanyOntology:investorId>
+        <CompanyOntology:investorName>BlackRock Fund Advisors</CompanyOntology:investorName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Computer_Programming_Services -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Computer_Programming_Services">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Industry"/>
+        <CompanyOntology:naics>Computer Programming Services</CompanyOntology:naics>
+        <CompanyOntology:naicsCode>541511</CompanyOntology:naicsCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Electronic_Shopping_and_Mail-Order_Houses -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Electronic_Shopping_and_Mail-Order_Houses">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Industry"/>
+        <CompanyOntology:naics>Electronic Shopping and Mail-Order Houses</CompanyOntology:naics>
+        <CompanyOntology:naicsCode>454110</CompanyOntology:naicsCode>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Gmail -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Gmail">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Product"/>
+        <CompanyOntology:productId>GMAIL1</CompanyOntology:productId>
+        <CompanyOntology:productName>Gmail</CompanyOntology:productName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Google -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Google">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Company"/>
+        <CompanyOntology:hasDepartments rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Google_Cloud_Platform"/>
+        <CompanyOntology:hasEmployee rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#John_Doe"/>
+        <CompanyOntology:operatesIn rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#All_Other_Information_Services"/>
+        <CompanyOntology:produces rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Gmail"/>
+        <CompanyOntology:companyId>100</CompanyOntology:companyId>
+        <CompanyOntology:companyName>Google</CompanyOntology:companyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Google_Cloud_Platform -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Google_Cloud_Platform">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Engineering_And_Technology"/>
+        <CompanyOntology:departmentId>GCP1</CompanyOntology:departmentId>
+        <CompanyOntology:departmentName>Google Cloud Platform</CompanyOntology:departmentName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#JPMorgan_Investment_Management -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#JPMorgan_Investment_Management">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Investor"/>
+        <CompanyOntology:investsIn rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Amazon"/>
+        <CompanyOntology:investorId>2</CompanyOntology:investorId>
+        <CompanyOntology:investorName>JPMorgan Investment Management</CompanyOntology:investorName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#John_Doe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#John_Doe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Employee"/>
+        <CompanyOntology:isPartOfDepartment rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Google_Cloud_Platform"/>
+        <CompanyOntology:employeeId>E101</CompanyOntology:employeeId>
+        <CompanyOntology:employeeName>John Doe</CompanyOntology:employeeName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Vanguard_Group -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Vanguard_Group">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Investor"/>
+        <CompanyOntology:investsIn rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Amazon"/>
+        <CompanyOntology:investsIn rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Google"/>
+        <CompanyOntology:investorId>100</CompanyOntology:investorId>
+        <CompanyOntology:investorName>Vanguard</CompanyOntology:investorName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Whole_Foods -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Whole_Foods">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Company"/>
+        <CompanyOntology:operatesIn rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Supermarkets_and_Other_Grocery_(except_Convenience)_Stores"/>
+        <CompanyOntology:companyId>104</CompanyOntology:companyId>
+        <CompanyOntology:companyName>Whole Foods</CompanyOntology:companyName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Supermarkets_and_Other_Grocery_(except_Convenience)_Stores -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Supermarkets_and_Other_Grocery_(except_Convenience)_Stores">
+        <rdf:type rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Industry"/>
+        <CompanyOntology:naics>Supermarkets and Other Grocery (except Convenience) Stores</CompanyOntology:naics>
+        <CompanyOntology:naicsCode>445110</CompanyOntology:naicsCode>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
