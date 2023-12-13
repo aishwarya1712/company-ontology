@@ -7,7 +7,9 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:CompanyOntology="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology"/>
+    <owl:Ontology rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology">
+        <rdfs:comment xml:lang="en">An Ontology for the Company domain, created by Aishwarya Sriram for final project submissions for Info 202: Information Organization and Retrieval at the School of Information, University of California - Berkeley.</rdfs:comment>
+    </owl:Ontology>
     
 
 
@@ -1075,6 +1077,7 @@
         <CompanyOntology:hasEmployee rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#John_Doe"/>
         <CompanyOntology:operatesIn rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#All_Other_Information_Services"/>
         <CompanyOntology:produces rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Gmail"/>
+        <CompanyOntology:companyAddress>1600 Amphitheatre Parkway in Mountain View, California</CompanyOntology:companyAddress>
         <CompanyOntology:companyId>100</CompanyOntology:companyId>
         <CompanyOntology:companyName>Google</CompanyOntology:companyName>
         <CompanyOntology:employeeCount>174014</CompanyOntology:employeeCount>
@@ -1252,6 +1255,14 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Whole_Foods">
         <rdf:type rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Company"/>
         <CompanyOntology:operatesIn rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Supermarkets_and_Other_Grocery_(except_Convenience)_Stores"/>
+        <CompanyOntology:produces rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Beverages"/>
+        <CompanyOntology:produces rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#BreadsRollsBakery"/>
+        <CompanyOntology:produces rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#FruitsAndVeggies"/>
+        <CompanyOntology:produces rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#IceCreamFrozenDesserts"/>
+        <CompanyOntology:produces rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#JamsJelliesButters"/>
+        <CompanyOntology:produces rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#RiceGrainsBeans"/>
+        <CompanyOntology:produces rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#SaucesAndMarinades"/>
+        <CompanyOntology:produces rdf:resource="http://www.semanticweb.org/umasriram/ontologies/2023/11/CompanyOntology#Supplements"/>
         <CompanyOntology:companyId>104</CompanyOntology:companyId>
         <CompanyOntology:companyName>Whole Foods</CompanyOntology:companyName>
     </owl:NamedIndividual>
